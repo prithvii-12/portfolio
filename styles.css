@@ -242,9 +242,36 @@ body {
 
 .certificates-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     gap: 2rem;
     margin: 0 auto;
+}
+
+.certificate-card {
+    background: var(--card-bg);
+    padding: 1rem;
+    border-radius: 15px;
+    text-align: center;
+    border: 1px solid var(--border-color);
+    transition: all var(--transition);
+}
+
+.certificate-card:hover {
+    transform: translateY(-5px);
+    border-color: var(--primary-color);
+    box-shadow: 0 10px 30px rgba(0, 212, 255, 0.2);
+}
+
+.certificate-icon {
+    width: 180px;
+    height: auto;
+    max-width: 100%;
+    border-radius: 8px;
+    transition: transform var(--transition);
+}
+
+.certificate-card:hover .certificate-icon {
+    transform: scale(1.05);
 }
 
 .certificate-return {
