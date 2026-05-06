@@ -221,7 +221,7 @@ body {
 
 /* ==================== CERTIFICATES SECTION ==================== */
 .certificates {
-    padding: 80px 20px;
+    padding: 100px 20px;
     background: var(--card-bg);
     border-top: 1px solid var(--border-color);
     border-bottom: 1px solid var(--border-color);
